@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Matias Mäki's portfolio showcasing musical projects, performances, and media coverage.">
+    <meta name="keywords" content="Matias Mäki, guitar, music, performances, portfolio">
+    <title>MatiasMakiMusic | Home</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="desktop-display">
+                <li><a class="link" href="index.html">Home</a></li>
+                <li><a class="link" href="about.html">About</a></li>
+                <li><a class="link" href="projects.html">Projects</a></li>
+                <li><a class="link" href="media.html">Media</a></li>
+            </ul>
+
+            <div class="mobile-display">
+                <button class="menu-toggle" aria-expanded="false" aria-label="Open navigation menu">☰</button>
+                <ul class="mobile-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="media.html">Media</a></li>
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="vKuva">
+                <img src="Images/Media/kotisivu-rajattu.JPG" alt="Matias Mäki playing guitar on a stage">
+            </div>
+
+            <div class="teksti">
+                <h2>About me</h2>
+                <p>My name is Matias, and I'm a guitarist from Southern Finland. 
+                    I've been playing guitar for about five years now, and during that time, 
+                    I've explored a wide range of genres. While I enjoy blues, rock, and various other genres, 
+                    I’ve always found myself gravitating towards more heavier stuff.</p>
+                <p>In the early stages of my journey, I took private guitar lessons to build a solid foundation. 
+                    However, when the COVID-19 pandemic hit, I shifted to teaching myself.
+                    Since then I spent the rest of my high school years practicing, playing and performing with my friends, 
+                    while also working on my own compositions.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p><span style="font-weight: 600;">Contact</span> | <a class="link"
+                href="mailto: matias_maki@live.com"><u>matias_maki@live.com</u></a></p>
+    </footer>
+
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function () {
+            const menu = document.querySelector('.mobile-menu');
+            const expanded = this.getAttribute('aria-expanded') === 'true' || false;
+
+            this.setAttribute('aria-expanded', !expanded);
+            menu.classList.toggle('active');
+        });
+    </script>
+
+<script>
+    window.onresize = function() {
+      // Get the current width of the image's container
+      var containerWidth = document.getElementById('kuva').parentElement.clientWidth;
+      // Set the width of the image to match the container
+      document.getElementById('kuva').style.width = containerWidth + 'px';
+    }
+  </script>
+
+</body>
+
+</html>

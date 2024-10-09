@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Matias Mäki's portfolio showcasing musical projects, performances, and media coverage.">
+    <meta name="keywords" content="Matias Mäki, guitar, music, performances, portfolio">
+    <title>MatiasMakiMusic | Home</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body class="kotisivu" background="Images/Media/kotisivu_tausta.jpg" style="background-repeat: no-repeat;">
+    <!-- <body class="kotisivu"> -->
+    <header>
+        <nav>
+            <ul class="desktop-display">
+                <li><a class="link" href="index.html">Home</a></li>
+                <li><a class="link" href="about.html">About</a></li>
+                <li><a class="link" href="projects.html">Projects</a></li>
+                <li><a class="link" href="media.html">Media</a></li>
+            </ul>
+
+            <div class="mobile-display">
+                <button class="menu-toggle" aria-expanded="false" aria-label="Open navigation menu">☰</button>
+                <ul class="mobile-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="media.html">Media</a></li>
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="vKuva">
+                <img class="mobile-only" src="Images/Media/ab-me.JPG" alt="Matias Mäki playing guitar on a stage" height="750"
+                    px>
+            </div>
+
+            <div class="kTeksti teksti">
+                <h2>Welcome to my website!</h2>
+                <p>My name is Matias and I'm a Finnish guitarist.</p>
+                <!-- <h2>Socials</h2> -->
+                <p><span style="font-weight: 600;">Contact</span> | <a class="link"
+                    href="mailto: matias_maki@live.com"><u>matias_maki@live.com</u></a></p>
+                <!-- <p class="socials">Coming soon</p> -->
+            </div>
+        </section>
+    </main>
+    <!-- <footer>
+        <p><span style="font-weight: 600;">Contact</span> | <a class="link"
+                href="mailto: matias_maki@live.com"><u>matias_maki@live.com</u></a></p>
+    </footer> -->
+
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function () {
+            const menu = document.querySelector('.mobile-menu');
+            const expanded = this.getAttribute('aria-expanded') === 'true' || false;
+
+            this.setAttribute('aria-expanded', !expanded);
+            menu.classList.toggle('active');
+        });
+    </script>
+
+<script>
+    window.onresize = function() {
+      // Get the current width of the image's container
+      var containerWidth = document.getElementById('kuva').parentElement.clientWidth;
+      // Set the width of the image to match the container
+      document.getElementById('kuva').style.width = containerWidth + 'px';
+    }
+  </script>
+
+</body>
+
+</html>

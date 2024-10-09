@@ -1,0 +1,306 @@
+body {
+    background-color: #202028;
+    color: white;
+    font-family: 'montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    padding: 0;
+    margin: 0;
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+}
+
+.link:hover {
+    color: #00c3ff;
+}
+
+header {
+    margin: 0px;
+    padding: 0px;
+    border-bottom: 3px solid #FFF;
+    width: 100%;
+    background-color: #3d3d4e;
+    box-sizing: border-box;
+}
+
+img,
+iframe {
+    border: 3px solid #FFF;
+    max-width: 100%;
+}
+
+footer {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+h1 {
+    display: block;
+    color: #00c3ff;
+    font-weight: 300;
+    margin: 0;
+    padding-top: 0;
+    padding-bottom: 50px;
+}
+
+#hKuva {
+    width: 100%;
+    height: auto;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 16/9;
+}
+
+.mTeksti {
+    position: relative;
+}
+
+@media only screen and (min-width: 1025px) {
+
+    main {
+        padding: 5% 10% 10% 10%;
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mobile-display {
+        display: none;
+    }
+
+    .mobile-only {
+        display: none;
+    }
+
+    header {
+        height: 60px;
+    }
+
+    header nav ul {
+        display: flex;
+        list-style: none;
+        justify-content: flex-end;
+        padding: 0;
+        margin: 0;
+        padding-left: 80%;
+        padding-top: 20px;
+        padding-right: 40px;
+    }
+
+    header nav ul li {
+        margin-left: 20%;
+    }
+
+    section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .vKuva {
+        display: flex;
+        float: left;
+        margin-left: 15px;
+        margin-right: 50px;
+        max-width: 100%;
+        width: 1000px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .oKuva {
+        display: flex;
+        float: right;
+        margin-right: 15px;
+        margin-left: 50px;
+        max-width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .oTeksti {
+        overflow: hidden;
+        max-width: 40%;
+        line-height: 1.8;
+        margin-bottom: 1.5rem;
+    }
+
+    h1 {
+        font-size: 96px;
+        display: block;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .mediaosio {
+        height: 90vh;
+        padding-bottom: 75px;
+        margin-bottom: 75px;
+    }
+
+    .kTeksti {
+        position: absolute;
+        top: 45%;
+        right: 20%;
+        background-color: rgba(32, 32, 40, 0.9);
+        padding: 10px 0px 10px 10px;
+        border-radius: 20px;
+}
+
+    iframe {
+        position: absolute;
+        max-width: 45%;
+        height: auto;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+
+}
+
+@media only screen and (max-width: 1024px) {
+
+    .kotisivu {
+        background-image: none;
+    }
+    
+    .desktop-display {
+        display: none;
+    }
+
+    .mobile-display {
+        display: block;
+        background-color: #3d3d4e;
+        padding: 15px;
+        text-align: right;
+    }
+
+    .mobile-menu {
+        display: none;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .mobile-menu.active {
+        display: block;
+        background-color: #3d3d4e;
+        text-align: center;
+    }
+
+    .mobile-menu li {
+        margin: 10px 0;
+    }
+
+    .mobile-menu a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+    }
+
+    .mobile-menu a:hover {
+        color: #00c3ff;
+    }
+
+    .menu-toggle {
+        background-color: transparent;
+        border: none;
+        color: white;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .menu-toggle:focus {
+        outline: none;
+    }
+
+    .kuva {
+        display: grid;
+        margin: 20px auto;
+        text-align: center;
+        width: 100%;
+    }
+
+    .teksti {
+        margin: 15px;
+        padding: 20px;
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 24px;
+    }
+
+    img {
+        margin-top: 50px;
+    }
+
+    .socials {
+        text-align: center;
+    }
+
+    .mOtsikko {
+        margin: 50px 0;
+        font-size: 48px;
+        text-align: center;
+        align-items: center;
+    }
+
+    /* .mediaKuva {
+        margin-left: 15px;
+        margin-right: 50px;
+        max-width: 100%;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        max-width: 100%;
+        height: auto;
+        width: auto;
+    } */
+
+    #hKuva {
+        max-width: 75%;
+        padding: 0;
+        margin: 0;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    iframe {
+        max-width: 75%;
+        padding: 0;
+        margin: 0;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .vKuva {
+        text-align: center;
+        max-width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .kTeksti {
+        text-align: center;
+    }
+
+    iframe {
+        max-width: 75vw;
+        height: auto;
+    }
+
+}

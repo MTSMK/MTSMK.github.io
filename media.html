@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Matias Mäki's portfolio showcasing musical projects, performances, and media coverage.">
+    <meta name="keywords" content="Matias Mäki, guitar, music, performances, portfolio">
+    <title>MatiasMakiMusic | Home</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="desktop-display">
+                <li><a class="link" href="index.html">Home</a></li>
+                <li><a class="link" href="about.html">About</a></li>
+                <li><a class="link" href="projects.html">Projects</a></li>
+                <li><a class="link" href="media.html">Media</a></li>
+            </ul>
+
+            <div class="mobile-display">
+                <button class="menu-toggle" aria-expanded="false" aria-label="Open navigation menu">☰</button>
+                <ul class="mobile-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="media.html">Media</a></li>
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <h1 class="mOtsikko">Media</h1>
+
+        <section class="mediaosio">
+            <div class="vKuva kuva" id="hKuva">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/UzWis5I8Kvc?si=UpmLvY9-yhJhyTnz" title="YouTube video player" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+            <div class="oTeksti teksti mTeksti">
+                <h2>Children of decadence (COB-cover)</h2>
+                <p>Children of Decadence is one of the most enjoyable songs I’ve performed live. Its fast rhythms and intense guitar work made it a crowd favorite during my diploma concert. 
+                    Having played this song with the same band previously, we were able to focus on perfecting the performance, 
+                    resulting in one of the most polished and technically impressive moments of the concert.</p>
+            </div>
+        </section>
+
+        <section>
+            <div class="oTeksti teksti desktop-display">
+                <h2>Holy wars...The punishment due (Megadeth-cover)</h2>
+                <p>This complex and technically demanding track was one of the highlights of my music diploma concert. 
+                    The song showcases intricate riffs, challenging solos, and dynamic shifts, making it one of the most difficult pieces I've performed. 
+                    It pushed my technical abilities as a guitarist, especially during the fast-paced solos, and it remains one of the most rewarding songs I’ve learned to play.</p>
+            </div>
+            <div class="oKuva kuva" id="hKuva">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/49M4DpnMlLM?si=tCNsWi0oKnyRiSeO" title="YouTube video player" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="oTeksti teksti mobile-only">
+                <h2>Holy wars...The punishment due (Megadeth-cover)</h2>
+                <p>This complex and technically demanding track was one of the highlights of my music diploma concert. 
+                    The song showcases intricate riffs, challenging solos, and dynamic shifts, making it one of the most difficult pieces I've performed. 
+                    It pushed my technical abilities as a guitarist, especially during the fast-paced solos, and it remains one of the most rewarding songs I’ve learned to play.</p>
+            </div>          
+        </section>
+    </main>
+    <footer>
+        <p><span style="font-weight: 600;">Contact</span> | <a class="link"
+                href="mailto: matias_maki@live.com"><u>matias_maki@live.com</u></a></p>
+    </footer>
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function () {
+            const menu = document.querySelector('.mobile-menu');
+            const expanded = this.getAttribute('aria-expanded') === 'true' || false;
+
+            this.setAttribute('aria-expanded', !expanded);
+            menu.classList.toggle('active');
+        });
+    </script>
+
+</body>
+
+</html>
