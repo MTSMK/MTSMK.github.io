@@ -4,11 +4,13 @@ body {
     font-family: 'montserrat', sans-serif;
     margin: 0;
     padding: 0;
+    height: 100%;
 }
 
 html {
     padding: 0;
     margin: 0;
+    height: 100%;
 }
 
 .link {
@@ -164,6 +166,12 @@ iframe {
         margin-right: 10%;
     }
 
+    .kotisivu {
+        background-image: url('Images/Media/kotisivu_tausta.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
 
 }
 
